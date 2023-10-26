@@ -1,1 +1,5 @@
-https://gist.github.com/raviranjan20/72612ec46d75424a3c1c129fc035348a
+# Use regular expression to split the string
+result = re.split(r",(?=(?:[^']*'[^']*')*[^']*$)", text)
+
+# Remove single quotes from the elements
+result = [s.strip("'") for s in result]
